@@ -12,30 +12,30 @@ app = Flask(__name__)
 def vitals():
 	return render_template('vitals.html', title='Webcam Vitals Tracker')
 
-# Dashboard
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashboard.html', title = 'Dashboard')
+# # Dashboard
+# @app.route('/dashboard')
+# def dashboard():
+#     return render_template('dashboard.html', title = 'Dashboard')
 
-# Description
-@app.route('/description')
-def description():
-    return render_template('description.html', title = 'Description')
+# # Description
+# @app.route('/description')
+# def description():
+#     return render_template('description.html', title = 'Description')
 
-# About
-@app.route('/about')
-def about():
-    return render_template('about.html', title = 'About')
+# # About
+# @app.route('/about')
+# def about():
+#     return render_template('about.html', title = 'About')
 
-# Updates
-@app.route('/updates')
-def updates():
-    return render_template('updates.html', title = 'Updates')
+# # Updates
+# @app.route('/updates')
+# def updates():
+#     return render_template('updates.html', title = 'Updates')
 
-# Contact
-@app.route('/contact')
-def contact():
-    return render_template('contact.html', title = 'Contact')
+# # Contact
+# @app.route('/contact')
+# def contact():
+#     return render_template('contact.html', title = 'Contact')
 
 
 if __name__ == '__main__':
