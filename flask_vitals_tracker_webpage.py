@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/vitals')
 def vitals():
-	return render_template('vitals.html', title='Webcam Vitals Tracker')
+	return render_template('layout.html', title='Webcam Vitals Tracker')
 
 if __name__ == '__main__':
 	app.run(debug=True)
