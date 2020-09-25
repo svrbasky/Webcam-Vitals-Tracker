@@ -1,7 +1,37 @@
-.body {
-    background-color: #8abded;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+header.site-header{
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    }
 
 .navbar{
-    color: #4d6cdb;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    }
+
+.navbar-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-items{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10%;
+    padding: 10%;
 }

@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Webcam Vitals Tracker</title>
-    <meta name="description" content="Uses Webcam to Compute user's Vitals through video using Photoplethysmography.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/static/css/main.css">
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+{% extends "layout.html" %}
+{% block content %}
     <h1>Webcam Vitals Tracker</h1>
     <div class="camera-feed">
-      Camera
-      <p id="demo"></p>
-      <span></span>
+      <h4>Camera</h4>
+      <p>Allow Webcam access to see yourself here.</p>
     </div>
 
     <div class="dashboard">
-      Vitals
-      <p id="vitals"></p>
-      <span></span>
+      <h4>Vitals</h4>
+      <p>See your vitals here.</p>
     </div>
-
-    <script src="" async defer></script>
-  </body>
-</html>
+{% endblock content %}
