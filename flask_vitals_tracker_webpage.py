@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, Response
+from webcam_stream import webCam
 
 # Define app
 app = Flask(__name__)
@@ -13,7 +14,17 @@ def vitals():
 	return render_template('vitals.html')
 
 # Access Camera and Post on Cam box
+def gen(camera):
+    while True:
+        frame = camera.get_frame()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
+
+@app.route('/vitals')
+def video_feed():
+    return Response(gen(webCam()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 # # Dashboard
 # @app.route('/dashboard')
