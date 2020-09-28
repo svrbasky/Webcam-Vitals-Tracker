@@ -10,6 +10,9 @@ app = Flask(__name__)
 def vitals():
 	return render_template('vitals.html')
 
+# Access Camera and Post on Cam box
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
 
