@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <!--<html class="no-js"> --><!--<![endif]-->
   <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -16,38 +16,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="static\css\main.css">
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Navigation Bar -->
+    <!-- HEADER and Nav -->
     <header class="site-header">
-      <!-- Main Navigation -->
-      <nav class="navbar">
-        <!-- Left -->
-        <div class="navbar-left">
-          <a class="navbar-item" href="/"><h1>Webcam Vitals Tracker</h1></a>
-          <a class="navbar-item" href="/home">Home</a>
-          <a class="navbar-item" href="/vitals">Vitals</a>
-          <a class="navbar-item" href="/about">About</a>
-        </div>
+      <h1>Webcam Vitals Tracker</h1>
 
-        <!-- Right  -->
-        <div>
-          <a class="navbar-item" href="/updates">Updates</a>
-          <a class="navbar-item" href="/contact">Contact</a>
-        </div>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a class="navbar-item" href="/home">Home</a></li>
+          <li><a class="navbar-item" href="/vitals">Vitals</a></li>
+          <li><a class="navbar-item" href="/about">About</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
+    <hr>
+
+    <!-- Main Content Page -->
+    <main class="main-content">
       {% block content %}{% endblock %}
     </main>
 
+    <hr>
 
-    <script src="" async defer></script>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>Write some description.</p>
+      <p>Copyright to Krishna Vijay Samayamantri.</p>
+    </footer>
+
+    <!-- <script src="" async defer></script> -->
   </body>
 </html>
