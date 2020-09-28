@@ -22,10 +22,10 @@ def vitals():
 # def description():
 #     return render_template('description.html', title = 'Description')
 
-# # About
-# @app.route('/about')
-# def about():
-#     return render_template('about.html', title = 'About')
+# About
+@app.route('/about')
+def about():
+    return render_template('about.html', title = 'About')
 
 # # Updates
 # @app.route('/updates')

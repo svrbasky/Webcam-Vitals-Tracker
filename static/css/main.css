@@ -78,3 +78,19 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.vitals-dash-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px 15px;
+    /* padding: 15px 15px; */
+    border: blue;
+    border-width: 5px;
+    height: 800px;
+}
+
+.box{
+    margin: 20px;
+    padding: 15px;
+}
