@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, Response
 
 # Define app
 app = Flask(__name__)
@@ -10,7 +10,10 @@ app = Flask(__name__)
 @app.route('/home')
 @app.route('/vitals')
 def vitals():
-	return render_template('vitals.html', title='Webcam Vitals Tracker')
+	return render_template('vitals.html')
+
+# Access Camera and Post on Cam box
+
 
 # # Dashboard
 # @app.route('/dashboard')
