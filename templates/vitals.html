@@ -1,19 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
-  <h1>Webcam Vitals Tracker</h1>
-  <p>Allow access to your webcam and check out your vitals being computed using video.</p>
-
-  <div class="vitals-dash-container">
-    <div class="vitals-dash">
-      <div class="box webcam-feed">
-        <h4>Camera feed</h4>
-        <p>Display webcam feed here.</p>
-      </div>
-      <div class="box dash">
-        <h4>Dashboard</h4>
-        <p>Display Vitals in real time.</p>
-      </div>
-    </div>
+  <!-- CAMERA -->
+  <div class="content cam">
+    <p>This box will contain the webcam feed.</p>
   </div>
 
+  <!-- DASHBOARD -->
+  <div class="content dashboard">
+    <p>This box will display the vitals on dashboard.</p>
+  </div>
 {% endblock content %}
