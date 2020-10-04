@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, Response
 from webcam_stream import webCam
+from imutils.video import VideoStream
 
 # Define app
 app = Flask(__name__)
@@ -16,15 +17,15 @@ def vitals():
 # Access Camera and Post on Cam box
 def gen(camera):
     while True:
+        #get camera frame
         frame = camera.get_frame()
         yield (b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
-@app.route('/vitals')
+@app.route('/video_feed')
 def video_feed():
-    return Response(gen(webCam()),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(gen(webCam()), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 # # Dashboard
 # @app.route('/dashboard')
