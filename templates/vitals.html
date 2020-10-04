@@ -2,8 +2,11 @@
 {% block content %}
   <!-- CAMERA -->
   <div class="content cam">
+    <!-- <video src="{{ url_for('video_feed') }}"></video> -->
     <!-- <p>This box will contain the webcam feed.</p> -->
-    <img id="cam" src="{{ url_for('video_feed') }}" alt="This box will contain the webcam feed.">
+    <div>
+      <img id="camera" src="{{ url_for('video_feed') }}" alt="This box will contain the webcam feed.">
+    </div>
 
   </div>
 

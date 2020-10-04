@@ -5,6 +5,7 @@ This class will access webcam and display video on webpage.
 """
 from imutils.video import WebcamVideoStream
 import cv2
+import numpy as np
 
 
 class webCam(object):
@@ -21,6 +22,15 @@ class webCam(object):
         image = self.stream.read()
 
         ret, jpeg = cv2.imencode('.jpg', image)
-        data = []
-        data.append(jpeg.tobytes())
-        return data
+        # data = []
+        # data.append(jpeg.tobytes())
+        # return data
+        return jpeg.tobytes()
+
+class processVitals(object):
+    # Obtain Average Temperature
+
+    # Obtain Heart Rate
+
+    # Obtain Respiration Rate
+    
