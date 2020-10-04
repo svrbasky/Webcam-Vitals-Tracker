@@ -52,7 +52,7 @@ a:hover {
 
 }
 
-.cam, .dashboard{
+.cam, .dashboard, .content{
       border: 1px solid #B2D6FF;
       padding: 20px;
       width: 40%;
