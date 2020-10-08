@@ -24,6 +24,10 @@ class WebcamFrame:
         self.TempList = []  # Full Arrays (useful after full execution)
         self.FrameId = 1  # Contains current frame ID (Single)
 
+        self.bluesList = []
+        self.greensList = []
+        self.redsList = []
+
     # MODIFY THIS HEAVILY
     def captureFrame(self):
         with cv2.VideoCapture(0) as cap:
