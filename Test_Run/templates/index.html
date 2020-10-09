@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Remote PPG Demo</title>
+  </head>
+  <body>
+    <h2>Remote PPG Demo</h2>
+    <p></p>
+       <form method="post" action="/">
+           <input type="submit" name="Start" value="Start">
+           <input type="submit" name="Stop" value="Stop">
+       </form>
+    <p></p>
+    <p></p>
+    <img id="bg" src="{{ url_for('video_feed') }}">
+  </body>
+</html>
